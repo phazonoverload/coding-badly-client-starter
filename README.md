@@ -1,0 +1,3 @@
+- npm run dev
+- Your code in public/
+- Must must https ngrok url in browser during development
