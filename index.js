@@ -24,8 +24,8 @@ io.on("connection", s => {
 })
 
 app.post('/snake/move', (req, res) => {
-    socket.emit('move', req.body)
     const move = snakeLogic(req.body)
+    socket.emit('move', { ...req.body, move })
     res.json({ move })
 })
 
